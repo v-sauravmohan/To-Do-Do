@@ -1,0 +1,11 @@
+<form [formGroup]="addToForm" (ngSubmit)="onSubmit()">
+    <input type="text" id="name" name="name" placeholder="Name" formControlName="name" />
+    <div *ngIf="submitted && validate.name.errors">
+        <div *ngIf="validate.name.errors.required">Name is required</div>
+    </div>
+    <input type="text" id="description" name="description" placeholder="Description" formControlName="description" />
+    <div *ngIf="submitted && validate.description.errors">
+        <div *ngIf="validate.description.errors.required">Description is required</div>
+    </div>
+    <button class="button" type="submit">Add to list</button>
+</form>

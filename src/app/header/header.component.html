@@ -1,0 +1,11 @@
+<div class="header row">
+    <h2 class="col-9 center">TodoDo</h2>
+    <div class="col-3 center">
+        <button class="btn btn-primary btn-xl" (click)="openModal('add-todo')">+</button>
+    </div>
+</div>
+
+<app-modal id="add-todo">
+    <app-addform></app-addform>
+    <button (click)="closeModal('add-todo')">Close</button>
+</app-modal>
