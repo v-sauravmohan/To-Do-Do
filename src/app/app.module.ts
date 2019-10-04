@@ -11,6 +11,7 @@ import { ModalService } from './services/modal.service';
 import { ModalComponent } from './modal/modal.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GetdataService } from './services/getdata.service';
+import { ChecklistitemComponent } from './checklist/checklistitem/checklistitem.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GetdataService } from './services/getdata.service';
     HeaderComponent,
     ChecklistComponent,
     AddformComponent,
-    ModalComponent
+    ModalComponent,
+    ChecklistitemComponent
   ],
   imports: [
     BrowserModule,

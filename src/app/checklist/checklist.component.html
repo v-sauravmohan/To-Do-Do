@@ -1,6 +1,8 @@
 <div class="container">
   <h2>Event 1</h2>
   <ul class="list-group">
-    <li class="list-group-item" *ngFor="let item of list.to_do_list"> {{ item }} </li>
+    <li class="list-group-item" *ngFor="let item of list">
+      <app-checklistitem [item]="item"></app-checklistitem>
+    </li>
   </ul>
 </div>

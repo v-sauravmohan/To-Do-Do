@@ -19,7 +19,7 @@ export class ChecklistComponent implements OnInit {
     this.getdata.getData().subscribe(
       data => {
       this.data = data;
-      this.list = tryGet( () => this.data.to_do_list, []);
+      this.list = this.data.to_do_list;
       },
       err => {
       console.log(err);
